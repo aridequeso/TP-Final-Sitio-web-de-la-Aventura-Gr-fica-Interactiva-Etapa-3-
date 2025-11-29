@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aventura de Perséfone y Hades</title>
+
+  <style>
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Georgia", serif;
+      background: linear-gradient(180deg, #f7f3e8, #e7ecd9);
+      color: #4a3d2f;
+      text-align: center;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(63, 54, 43, 0.95);
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s, transform 0.3s; 
+    }
+
+    nav a:hover {
+      color: #f7d488; 
+      transform: scale(1.1); 
+    }
+
+    header, section {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
+    header h1 {
+      font-size: 38px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      color: #3f362b;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+      color: #5a4f42;
+    }
+
+    .decor {
+      font-size: 32px;
+      margin: 15px 0;
+    }
+
+    .game-frame {
+      width: 700px;
+      height: 520px;
+      border: none;
+      border-radius: 16px;
+      margin: 30px auto;
+      display: block;
+      box-shadow: 0 0 18px rgba(0,0,0,0.18);
+      background: #fff;
+    }
+
+    #creditos p {
+      font-size: 16px;
+      color: #5a4f42;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 14px;
+      color: #7a6f63;
+    }
+
+    h2 {
+      margin-top: 20px;
+      font-size: 28px;
+      color: #3f362b;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#Tematica">Historia</a>
+    <a href="#juego">Juego</a>
+    <a href="#Produccion">Producción</a>
+    <a href="#Creditos">Créditos</a>
+  </nav>
+
+  <header id="Tematica">
+    <div class="decor">🌸🌿🌸</div>
+    <h1>La Historia de Perséfone y Hades</h1>
+    <p>
+      Nuestro juego se inspira en el mito de Perséfone y Hades, reinterpretado desde una perspectiva emocional y simbólica. 
+      En esta versión, nos alejamos del estereotipo del “rapto” para explorar el viaje interno de Perséfone entre dos mundos: 
+      la luz de la superficie y la profundidad del Inframundo.
+      <br><br>
+      La superficie representa el florecimiento, el ciclo natural y la vitalidad. El Inframundo, en cambio, es un espacio de 
+      sombras, decisiones y transformación. Ese contraste impulsa la estética y la narrativa de toda la experiencia.
+    </p>
+    <div class="decor">🌿✨🌿</div>
+  </header>
+
+  <section id="juego">
+    <h2>Jugar ahora</h2>
+    <iframe src="juego.html" class="game-frame"></iframe>
+  </section>
+
+  
+  <section id="Produccion">
+    <h2>Producción</h2>
+    <p>
+      Este sitio presenta el proceso creativo y técnico detrás de una propuesta inspirada en el mito de Perséfone y Hades. 
+      La experiencia combina estética, interactividad y programación.
+      <br><br>
+      En la primera etapa desarrollamos una Aventura Gráfica Interactiva en p5.js basada en escenas. Cada pantalla representa 
+      un fragmento del viaje de Perséfone, y el usuario avanza mediante decisiones que influyen en el recorrido. El foco está 
+      puesto en la narrativa, la ambientación y la idea de un camino que se construye a medida que se elige.
+    </p>
+  </section>
+
+  <section id="Creditos">
+    <h2>Créditos</h2>
+    <p>
+      <strong>Abril Morell</strong> y <strong>Priscila Villalba</strong>
+      <br><br>
+      <strong>Priscila Villalba:</strong> Historia, esquema, programación, diseño visual, generación de imágenes con IA.
+      <br>
+      <strong>Abril Morell:</strong> Historia, programación, diseño visual, sonido, generación de imágenes con IA.
+    </p>
+  </section>
+
+  <footer>
+    TPFinal – Sitio web de Aventura Gráfica Interactiva
+  </footer>
+
+</body>
+</html>
